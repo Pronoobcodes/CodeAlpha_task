@@ -12,8 +12,8 @@ while True:
     user_input = input("You: ").lower()
     if user_input in responses:
         print("Chatbot:", responses[user_input])
-    else:
-        print("Chatbot: I'm sorry, I don't understand that.")
-    if user_input == "bye":
+    elif user_input == "bye":
         print("Chatbot: Goodbye!")
         break
+    else:
+        print("Chatbot: I'm sorry, I don't understand that.")
